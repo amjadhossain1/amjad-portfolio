@@ -15,11 +15,15 @@ const Sidebar: React.FC<Props> = (props) => {
   };
   return (
     <div>
-      {/* <Image
-        className="w-32 h-32 mx-auto rounded-fill"
-        src="../"
+      <Image
+        className="mx-auto border rounded-full"
+        src={me}
         alt="my picture"
-      /> */}
+        height="8rem"
+        width="8rem"
+        layout='responsive'
+        quality='100'
+      />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Amjad</span>Hossain
       </h3>
@@ -61,7 +65,7 @@ const Sidebar: React.FC<Props> = (props) => {
         onClick={changeTheme}
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none"
       >
-        Change Theme
+        Toglle Theme
       </button>
     </div>
   );

@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
 import { GetServerSideProps, GetStaticProps } from "next";
+import { fadeInUp, routeAnimation, stagger } from "../animate";
 import ServiceCard from "../components/service-card";
 import { services } from "../mokData";
 
 const index = () => {
   return (
-    <div className="flex flex-col px-6 pt-1">
+    <motion.div
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="flex flex-col px-6 pt-1"
+    >
       <h5 className="my-3 text-base font-medium">
         I am currently pursuing B.Tech Degree(Final Year) in Computer Science
         Engineering from Academy of Technology. I have 3+ years of experience in
@@ -18,19 +26,25 @@ const index = () => {
         <h4 className="my-3 text-xl font-semibold tracking-wide">
           What I am doing
         </h4>
-        <div className="grid gap-6 my-3 md:grid-cols-2">
+        <motion.div
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+          className="grid gap-6 my-3 md:grid-cols-2"
+        >
           {/* children's initial and animate property should be same as the parent during a stagger effect  */}
           {services.map((service) => (
-            <div
+            <motion.div
               className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
               key={service.title}
+              variants={fadeInUp}
             >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
