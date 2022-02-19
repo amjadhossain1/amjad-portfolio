@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GetServerSideProps, GetStaticProps } from "next";
+import Head from "next/head";
 import { fadeInUp, routeAnimation, stagger } from "../animate";
 import ServiceCard from "../components/service-card";
 import { services } from "../mokData";
@@ -13,8 +14,11 @@ const index = ({ endpoint }: any) => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="flex flex-col px-6 pt-1"
+      className="flex flex-col flex-grow px-6 pt-1"
     >
+      <Head>
+        <title> Amjad | Web Developer | Portfolio</title>
+      </Head>
       <h5 className="my-3 text-base font-medium">
         I am currently pursuing B.Tech Degree(Final Year) in Computer Science
         Engineering from Academy of Technology. I have 3+ years of experience in
