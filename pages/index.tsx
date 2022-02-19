@@ -4,7 +4,9 @@ import { fadeInUp, routeAnimation, stagger } from "../animate";
 import ServiceCard from "../components/service-card";
 import { services } from "../mokData";
 
-const index = () => {
+const index = ({ endpoint }: any) => {
+  console.log("endpoint", endpoint);
+
   return (
     <motion.div
       variants={routeAnimation}
@@ -50,17 +52,17 @@ const index = () => {
 
 export default index;
 
-// export const getServerSideProps = async (context: GetServerSideProps) => {
-//   const res = await fetch("http://localhost:3000/api/services");
-//   const data = await res.json();
-//   console.log('SERVER: ', data.services);
+export const getServerSideProps = async (context: GetServerSideProps) => {
+  // const res = await fetch(`${process.env.VERCEL_URL}/api/services`);
+  // const data = await res.json();
+  // console.log(process.env.VERCEL_URL);
 
-//   return {
-//     props: {
-//       services: data.services,
-//     },
-//   };
-// };
+  return {
+    props: {
+      endpoint: process.env.VERCEL_URL,
+    },
+  };
+};
 
 // export const getStaticProps = async (context: GetStaticProps) => {
 //   const res = await fetch("http://localhost:3000/api/services");

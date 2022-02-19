@@ -9,6 +9,7 @@ import { fadeInUp, routeAnimation, stagger } from "../animate";
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
+  const [showDetail, setShowDetail] = useState<number | null>(null);
 
   const handlerFilterCategory = (category: Category | "all") => {
     if (category === "all") {
@@ -26,10 +27,13 @@ const Projects = () => {
 
   return (
     <motion.div
-    variants={routeAnimation}
-    initial="initial"
-    animate="animate"
-    exit="exit" className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="px-5 py-2 overflow-y-scroll"
+      style={{ height: "65vh" }}
+    >
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}
         active={active}
@@ -47,7 +51,7 @@ const Projects = () => {
             className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
             variants={fadeInUp}
           >
-            <ProjectCard project={project} />
+            <ProjectCard project={project} showDetail={showDetail} setShowDetail={setShowDetail}/>
           </motion.div>
         ))}
       </motion.div>

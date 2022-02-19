@@ -21,8 +21,8 @@ const Sidebar: React.FC<Props> = (props) => {
         alt="my picture"
         height="8rem"
         width="8rem"
-        layout='responsive'
-        quality='100'
+        layout="responsive"
+        quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Amjad</span>Hossain
@@ -30,9 +30,13 @@ const Sidebar: React.FC<Props> = (props) => {
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">
         Web Developer
       </p>
-      <p className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full dark:bg-dark-200">
+      <a
+        className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full dark:bg-dark-200"
+        href="../../images/blink.jpg"
+        download="blink.jpg"
+      >
         <GiTie className="w-6 h-6" /> Download Resume
-      </p>
+      </a>
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
         <a href="" className="w-8 h-8 cursor-pointer">
           <AiFillYoutube />
