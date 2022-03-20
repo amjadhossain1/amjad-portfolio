@@ -20,15 +20,20 @@ const index = ({ endpoint }: any) => {
         <title> Amjad | Web Developer | Portfolio</title>
       </Head>
       <h5 className="my-3 text-base font-medium">
-        {/* I am currently pursuing B.Tech Degree(Final Year) in Computer Science
-        Engineering from Academy of Technology. I have 3+ years of experience in
-        Web Development and I have a Youtube Channel where I teach Full Stack
-        Web Development */}
         <b>Software Engineer Intern PrayersConnect (October 2021 to present)</b>{" "}
         Working as a front-end engineer. Helped developing the 2nd iteration of
-        their website which is currently live now.Technologies I got exposure to
-        while working here: <b>TypeScript, Next.js, React Query, Agile (Scrum),
-        Jest, Jotai</b>
+        their website which is currently{" "}
+        <a
+          className="text-green font-bold"
+          href="https://prayersconnect.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Live{" "}
+        </a>{" "}
+        now.Technologies I got exposure to while working here:{" "}
+        <b>TypeScript, Next.js, React Query, Agile (Scrum), Jest, Jotai</b>
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "

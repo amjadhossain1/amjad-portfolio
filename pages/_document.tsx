@@ -1,17 +1,16 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-// import favIcon from "../public/fav.png";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          <link rel="shortcut icon" href="/favicon2.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
             rel="stylesheet"
           />
-
           <meta
             name="description"
             content="MERN stack Web Developer looking for a job"

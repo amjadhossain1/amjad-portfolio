@@ -34,14 +34,21 @@ const resume = () => {
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div className="">
-            <h5 className="my-2 text-xl font-bold">Software Developer Jr.</h5>
+            <h5 className="my-2 text-xl font-bold">Software Engineer Jr.</h5>
             <p className="font-semibold">
               Software Engineer PrayersConnect(Intern)
             </p>
             <p className="my-3">
               Working as a front-end engineer. Helped developing the 2nd
               iteration of their website which is currently{" "}
-              <a className="text-green font-bold" href="https://prayersconnect.com/"> Live </a> 
+              <a
+                className="text-green font-bold"
+                href="https://prayersconnect.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live{" "}
+              </a>
               now.Technologies I got exposure to while working here:{" "}
               <b>
                 TypeScript, Next.js, React Query, Agile (Scrum), Jest, Jotai
