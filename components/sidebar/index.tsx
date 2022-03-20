@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import me from "../../assets/images/me.jpg";
+import me from "../../public/me.jpg";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
-import { BsToggle2Off, BsToggleOff, BsToggleOn } from "react-icons/bs";
+import { BsToggleOff, BsToggleOn } from "react-icons/bs";
 
 interface Props {}
 
@@ -35,10 +35,11 @@ const Sidebar: React.FC<Props> = (props) => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full dark:bg-dark-200"
-        href="../../images/blink.jpg"
-        download="blink.jpg"
+        href="../../amjad-hossain-resume.pdf"
+        download="amjad-hossain-resume.pdf"
       >
-        <GiTie className="w-6 h-6" /> Download Resume
+        {/* <GiTie className="w-6 h-6" /> */}
+         Download Resume
       </a>
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
         <a href="" className="w-8 h-8 cursor-pointer" aria-label="Youtube">

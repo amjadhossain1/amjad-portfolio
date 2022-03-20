@@ -3,7 +3,6 @@ import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { IProject, Service, Skill } from "./type";
-
 import { BsCircleFill } from "react-icons/bs";
 
 export const services: Service[] = [
@@ -11,30 +10,29 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b>, <b>Next.js</b>",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
+      "handle database, server, api using <b>Node.js </b> <b>Express.js </b> & other popular frameworks",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
-    about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+    about: "I can develop robust  REST API using <b>Node API</b> ",
   },
   {
     Icon: MdDeveloperMode,
     title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+    about: "a daily problem solver in <b>Codewars</b>",
   },
   {
     Icon: AiOutlineAntDesign,
     title: "UI/UX designer",
     about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+      "stunning user interface designer using <b>Figma</b>, <b>Adobe XD</b>  and  <b>Framer</b> ",
   },
   {
     Icon: RiComputerLine,
@@ -47,41 +45,51 @@ export const services: Service[] = [
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Python",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
     name: "Java Script",
     level: "60",
   },
   {
     Icon: BsCircleFill,
-    name: "React Native",
-    level: "80",
+    name: "Type Script",
+    level: "45",
   },
   {
     Icon: BsCircleFill,
     name: "React",
-    level: "70",
+    level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "Django",
-    level: "80",
+    name: "Next js",
+    level: "50",
   },
   {
     Icon: BsCircleFill,
     name: "Bootstrap",
+    level: "90",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Material UI",
     level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Tailwind CSS",
+    level: "60",
   },
 ];
 
 export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
+    name: "Github",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
     name: "Figma",
-    level: "85",
+    level: "65",
   },
   {
     Icon: BsCircleFill,
@@ -90,18 +98,18 @@ export const tools: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Illustrator",
-    level: "60",
+    name: "Adobe XD",
+    level: "50",
   },
   {
     Icon: BsCircleFill,
     name: "Framer",
-    level: "45",
+    level: "35",
   },
 ];
 
 export const projects: IProject[] = [
-  { 
+  {
     id: 1,
     name: "COVID Tracker",
     description:
@@ -207,5 +215,58 @@ export const projects: IProject[] = [
     description:
       "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
     key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+  },
+
+  //
+
+  {
+    id: 6,
+    name: "YouTube using YouTube ",
+    image_path: "/images/youtubeClone.png",
+    deployed_url: "https://not-utube.web.app/",
+    github_url: "https://github.com/amjadhossain1/modern-real-estate-app",
+    category: ["next"],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique corporis hic. Nulla quo voluptas culpa reprehenderit adipisci recusandae nostrum aperiam sunt, dolore voluptatibus vel! Error aut fugit cupiditate enim!",
+    key_techs: [
+      "Next JS",
+      "Chakra UI",
+      "React Icons",
+      "Framer Motion",            
+      "NProgress",   
+      "Millify",
+      'React horizontal scrolling menu'
+    ],
+  },
+  {
+    id: 7,
+    name: "Modern Real estate app",
+    image_path: "/images/real-estate.PNG",
+    deployed_url: "https://modern-real-estate-app-one.vercel.app",
+    github_url: "https://github.com/amjadhossain1/modern-real-estate-app",
+    category: ["next"],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique corporis hic. Nulla quo voluptas culpa reprehenderit adipisci recusandae nostrum aperiam sunt, dolore voluptatibus vel! Error aut fugit cupiditate enim!",
+    key_techs: [
+      "Next JS",
+      "Chakra UI",
+      "React Icons",
+      "Framer Motion",            
+      "NProgress",   
+      "Millify",
+      'React horizontal scrolling menu'
+    ],
+  },
+
+  {
+    id: 8,
+    name: "Next News App",
+    image_path: "/images/news-app.PNG",
+    deployed_url: "https://next-news-amjadrabby.vercel.app/",
+    github_url: "https://github.com/amjadhossain1/next-news",
+    category: ["next"],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique corporis hic. Nulla quo voluptas culpa reprehenderit adipisci recusandae nostrum aperiam sunt, dolore voluptatibus vel! Error aut fugit cupiditate enim!",
+    key_techs: ["Next js", "API"],
   },
 ];

@@ -50,7 +50,10 @@ const ProjectCard: FunctionComponent<IProps> = ({
           className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 md:p-10 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100 rounded-lg"
         >
           <div>
-            <motion.div variants={fadeInUp} className='border-4 border-gray-100'>
+            <motion.div
+              variants={fadeInUp}
+              className="border-4 border-gray-100"
+            >
               <Image
                 src={image_path}
                 alt={name}
@@ -73,6 +76,7 @@ const ProjectCard: FunctionComponent<IProps> = ({
               <a
                 href={deployed_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                target="_blank" rel="noreferrer"
               >
                 <AiFillProject /> <span>Project</span>
               </a>

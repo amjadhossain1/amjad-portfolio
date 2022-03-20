@@ -21,12 +21,12 @@ const resume = () => {
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div className="">
             <h5 className="my-2 text-xl font-bold">
-              Computer Science Engineering
+              (BSS) degree | Feni Government College (present | 2018 )
             </h5>
-            <p className="font-semibold">Academy of Technology (2017-2021)</p>
+            <p className="font-semibold">Academy of Technology (2019-2022)</p>
             <p className="my-3">
-              I am currently pursuing B.tech in Computer Science Engineering
-              from Academy of Technology
+              I am currently working as a front-end Software Engineer Intern
+              PrayersConnect (October 2021 to present)
             </p>
           </div>
         </motion.div>
@@ -35,8 +35,18 @@ const resume = () => {
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div className="">
             <h5 className="my-2 text-xl font-bold">Software Developer Jr.</h5>
-            <p className="font-semibold">Tata Consultancy Services</p>
-            <p className="my-3">I do not know why I am doing this job</p>
+            <p className="font-semibold">
+              Software Engineer PrayersConnect(Intern)
+            </p>
+            <p className="my-3">
+              Working as a front-end engineer. Helped developing the 2nd
+              iteration of their website which is currently{" "}
+              <a className="text-green font-bold" href="https://prayersconnect.com/"> Live </a> 
+              now.Technologies I got exposure to while working here:{" "}
+              <b>
+                TypeScript, Next.js, React Query, Agile (Scrum), Jest, Jotai
+              </b>
+            </p>
           </div>
         </motion.div>
       </div>
