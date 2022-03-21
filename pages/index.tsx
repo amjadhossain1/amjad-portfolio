@@ -20,7 +20,7 @@ const index = ({ endpoint }: any) => {
         <title> Amjad | Web Developer | Portfolio</title>
       </Head>
       <h5 className="my-3 text-base font-medium">
-        <b>Software Engineer Intern PrayersConnect (October 2021 to present)</b>{" "}
+        <b>Software Engineer(Intern) PrayersConnect (October 2021 to present)</b>{" "}
         Working as a front-end engineer. Helped developing the 2nd iteration of
         their website which is currently{" "}
         <a

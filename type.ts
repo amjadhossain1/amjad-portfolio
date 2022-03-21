@@ -22,9 +22,9 @@ export interface IProject {
   key_techs: string[];
 }
 export type Category =
+  | "javascript"
   | "react"
   | "next"
   | "node"
   | "express"
-  | "django"
   | "mongo";

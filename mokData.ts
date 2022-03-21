@@ -219,23 +219,90 @@ export const projects: IProject[] = [
 
   //
 
+
   {
-    id: 6,
-    name: "YouTube using YouTube ",
-    image_path: "/images/youtubeClone.png",
-    deployed_url: "https://not-utube.web.app/",
-    github_url: "https://github.com/amjadhossain1/modern-real-estate-app",
-    category: ["next"],
+    id: 2,
+    name: "Twitter Clone",
+    image_path: "/images/tweetme.jpg",
+    deployed_url: "https://amjadhossain1.github.io/issue-tracker",
+    github_url: "https://github.com/amjadhossain1/athena-design-responsive",
+    category: ["react"],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique corporis hic. Nulla quo voluptas culpa reprehenderit adipisci recusandae nostrum aperiam sunt, dolore voluptatibus vel! Error aut fugit cupiditate enim!",
     key_techs: [
-      "Next JS",
-      "Chakra UI",
+      "React JS",  
+      "React Router Dom", 
+      "Bootstrap",   
+    ],
+  },
+
+  {
+    id: 3,
+    name: "React Admin Dashboard",
+    image_path: "/images/react-dashboard.PNG",
+    deployed_url: "https://react-admin-dashboard-practice.netlify.app",
+    github_url: "https://github.com/amjadhossain1/react-admin-dashboard",
+    category: ["react"],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique corporis hic. Nulla quo voluptas culpa reprehenderit adipisci recusandae nostrum aperiam sunt, dolore voluptatibus vel! Error aut fugit cupiditate enim!",
+    key_techs: [
+      "React",  
+      "React Icons",  
+      "React Router Dom" , 
+      "React Overlays",
+      "Bootstrap",
+    ],
+  },
+
+  {
+    id: 4,
+    name: "Amar Somy Clint",
+    image_path: "/images/amar-somy.PNG",
+    deployed_url: "https://jugantor-clint.firebaseapp.com/",
+    github_url: "https://github.com/amjadhossain1/amar-somy-clint",
+    category: ["react"],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique corporis hic. Nulla quo voluptas culpa reprehenderit adipisci recusandae nostrum aperiam sunt, dolore voluptatibus vel! Error aut fugit cupiditate enim!",
+    key_techs: [
+      "React",    
       "React Icons",
-      "Framer Motion",            
-      "NProgress",   
-      "Millify",
-      'React horizontal scrolling menu'
+      "React Router Dom",
+      "Bootstrap",
+    ],
+  },
+  
+  {
+    id: 5,
+    name: "Issue Tracker",
+    image_path: "/images/issue-tracker.PNG",
+    deployed_url: "https://amjadhossain1.github.io/issue-tracker",
+    github_url: "https://github.com/amjadhossain1/issue-tracker",
+    category: ["javascript"],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique corporis hic. Nulla quo voluptas culpa reprehenderit adipisci recusandae nostrum aperiam sunt, dolore voluptatibus vel! Error aut fugit cupiditate enim!",
+    key_techs: [
+      "Javascript",    
+    ],
+  },
+
+  {
+    id: 6,
+    name: "Red onion foods",
+    image_path: "/images/red-onion.PNG",
+    deployed_url: "https://red-onion-foods.netlify.app",
+    github_url: "https://github.com/amjadhossain1/red-onion-foods",
+    category: ["react"],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique corporis hic. Nulla quo voluptas culpa reprehenderit adipisci recusandae nostrum aperiam sunt, dolore voluptatibus vel! Error aut fugit cupiditate enim!",
+    key_techs: [
+      "React JS",
+      "Redux",
+      "React Redux",
+      "Redux Thunk",
+      "React Hook Form",
+      "React Multi Carousel",
+      "Bootstrap",
+      "React Icons",
     ],
   },
   {
@@ -251,10 +318,10 @@ export const projects: IProject[] = [
       "Next JS",
       "Chakra UI",
       "React Icons",
-      "Framer Motion",            
-      "NProgress",   
+      "Framer Motion",
+      "NProgress",
       "Millify",
-      'React horizontal scrolling menu'
+      "React horizontal scrolling menu",
     ],
   },
 

@@ -45,10 +45,10 @@ const Sidebar: React.FC<Props> = (props) => {
         <a href="" className="w-8 h-8 cursor-pointer" aria-label="Youtube">
           <AiFillYoutube />
         </a>
-        <a href="" className="w-8 h-8 cursor-pointer" aria-label="Github">
+        <a href="https://github.com/amjadhossain1" className="w-8 h-8 cursor-pointer" aria-label="Github">
           <AiFillGithub />
         </a>
-        <a href="" className="w-8 h-8 cursor-pointer" aria-label="Linkedin">
+        <a href="https://www.linkedin.com/in/amjad-hossain-rabby" className="w-8 h-8 cursor-pointer" aria-label="Linkedin">
           <AiFillLinkedin />
         </a>
       </div>
